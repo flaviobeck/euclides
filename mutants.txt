@@ -1,0 +1,183 @@
+1. negated conditional → KILLED
+Negate Conditionals Mutator (NEGATE_CONDITIONALS)
+The negate conditionals mutator will mutate all conditionals found according to the replacement table below.
+
+2. removed conditional - replaced equality check with false → KILLED
+Remove Conditionals Mutator (REMOVE_CONDITIONALS)
+The remove conditionals mutator will remove all conditionals statements such that the guarded statements always execute
+
+3. removed conditional - replaced equality check with true → KILLED
+Remove Conditionals Mutator (REMOVE_CONDITIONALS)
+The remove conditionals mutator will remove all conditionals statements such that the guarded statements always execute
+
+4. Negated integer local variable number 1 → SURVIVED
+?
+
+5. equal to less than → KILLED
+Relational Operator Replacement Mutator (ROR)
+This mutator replaces a relational operator with another one. The mutator is composed of 5 sub-mutators (ROR1 to ROR5) that mutate the operators according to the table below.
+
+6. equal to less or equal → KILLED
+Relational Operator Replacement Mutator (ROR)
+This mutator replaces a relational operator with another one. The mutator is composed of 5 sub-mutators (ROR1 to ROR5) that mutate the operators according to the table below.
+
+7. equal to greater than → KILLED
+Relational Operator Replacement Mutator (ROR)
+This mutator replaces a relational operator with another one. The mutator is composed of 5 sub-mutators (ROR1 to ROR5) that mutate the operators according to the table below.
+
+8. equal to greater or equal → KILLED
+Relational Operator Replacement Mutator (ROR)
+This mutator replaces a relational operator with another one. The mutator is composed of 5 sub-mutators (ROR1 to ROR5) that mutate the operators according to the table below.
+
+9. equal to not equal → KILLED
+Relational Operator Replacement Mutator (ROR)
+This mutator replaces a relational operator with another one. The mutator is composed of 5 sub-mutators (ROR1 to ROR5) that mutate the operators according to the table below.
+
+10. Incremented (a++) integer local variable number 1 → KILLED
+Increments Mutator (INCREMENTS)
+The increments mutator will mutate increments, decrements and assignment increments and decrements of local variables (stack variables). It will replace increments with decrements and vice versa.
+
+11. Decremented (a--) integer local variable number 1 → KILLED
+Increments Mutator (INCREMENTS)
+The increments mutator will mutate increments, decrements and assignment increments and decrements of local variables (stack variables). It will replace increments with decrements and vice versa.
+
+12. Incremented (++a) integer local variable number 1 → TIMED_OUT
+Increments Mutator (INCREMENTS)
+The increments mutator will mutate increments, decrements and assignment increments and decrements of local variables (stack variables). It will replace increments with decrements and vice versa.
+
+13. Decremented (--a) integer local variable number 1 → TIMED_OUT
+Increments Mutator (INCREMENTS)
+The increments mutator will mutate increments, decrements and assignment increments and decrements of local variables (stack variables). It will replace increments with decrements and vice versa.
+
+20
+1. Replaced integer modulus with multiplication → KILLED
+Arithmetic Operator Replacement Mutator (AOR)
+Like the math mutator, this mutator replaces binary arithmetic operations for either integer or floating-point arithmetic with another operation. The mutator is composed of 4 sub-mutators (AOR_1 to AOR_4) that mutate operators according to the table below.
+
+2. Negated integer local variable number 0 → KILLED
+?
+
+3. Negated integer local variable number 1 → SURVIVED
+?
+
+4. Replaced integer operation with first member → TIMED_OUT
+Arithmetic Operator Deletion Mutator (AOD)
+This mutator replaces an arithmetic operation with one of its members. The mutator is composed of 2 sub-mutators, AOD_1 and AOD_2, that mutate the operation to its first and second member respectively.
+
+5. Replaced integer operation by second member → TIMED_OUT
+Arithmetic Operator Deletion Mutator (AOD)
+This mutator replaces an arithmetic operation with one of its members. The mutator is composed of 2 sub-mutators, AOD_1 and AOD_2, that mutate the operation to its first and second member respectively.
+
+6. Replaced integer modulus with multiplication → KILLED
+Arithmetic Operator Replacement Mutator (AOR)
+Like the math mutator, this mutator replaces binary arithmetic operations for either integer or floating-point arithmetic with another operation. The mutator is composed of 4 sub-mutators (AOR_1 to AOR_4) that mutate operators according to the table below.
+
+7. Replaced integer modulus with division → KILLED
+Arithmetic Operator Replacement Mutator (AOR)
+Like the math mutator, this mutator replaces binary arithmetic operations for either integer or floating-point arithmetic with another operation. The mutator is composed of 4 sub-mutators (AOR_1 to AOR_4) that mutate operators according to the table below.
+
+8. Replaced integer modulus with addition → TIMED_OUT
+Arithmetic Operator Replacement Mutator (AOR)
+Like the math mutator, this mutator replaces binary arithmetic operations for either integer or floating-point arithmetic with another operation. The mutator is composed of 4 sub-mutators (AOR_1 to AOR_4) that mutate operators according to the table below.
+
+9. Replaced integer modulus with subtraction → TIMED_OUT
+Arithmetic Operator Replacement Mutator (AOR)
+Like the math mutator, this mutator replaces binary arithmetic operations for either integer or floating-point arithmetic with another operation. The mutator is composed of 4 sub-mutators (AOR_1 to AOR_4) that mutate operators according to the table below.
+
+10. Incremented (a++) integer local variable number 0 → SURVIVED
+Increments Mutator (INCREMENTS)
+The increments mutator will mutate increments, decrements and assignment increments and decrements of local variables (stack variables). It will replace increments with decrements and vice versa.
+
+11. Incremented (a++) integer local variable number 1 → KILLED
+Increments Mutator (INCREMENTS)
+The increments mutator will mutate increments, decrements and assignment increments and decrements of local variables (stack variables). It will replace increments with decrements and vice versa.
+
+12. Decremented (a--) integer local variable number 0 → SURVIVED
+Increments Mutator (INCREMENTS)
+The increments mutator will mutate increments, decrements and assignment increments and decrements of local variables (stack variables). It will replace increments with decrements and vice versa.
+
+13. Decremented (a--) integer local variable number 1 → KILLED
+Increments Mutator (INCREMENTS)
+The increments mutator will mutate increments, decrements and assignment increments and decrements of local variables (stack variables). It will replace increments with decrements and vice versa.
+
+14. Incremented (++a) integer local variable number 0 → KILLED
+Increments Mutator (INCREMENTS)
+The increments mutator will mutate increments, decrements and assignment increments and decrements of local variables (stack variables). It will replace increments with decrements and vice versa.
+
+15. Incremented (++a) integer local variable number 1 → KILLED
+Increments Mutator (INCREMENTS)
+The increments mutator will mutate increments, decrements and assignment increments and decrements of local variables (stack variables). It will replace increments with decrements and vice versa.
+
+16. Decremented (--a) integer local variable number 0 → KILLED
+Increments Mutator (INCREMENTS)
+The increments mutator will mutate increments, decrements and assignment increments and decrements of local variables (stack variables). It will replace increments with decrements and vice versa.
+
+17. Decremented (--a) integer local variable number 1 → KILLED
+Increments Mutator (INCREMENTS)
+The increments mutator will mutate increments, decrements and assignment increments and decrements of local variables (stack variables). It will replace increments with decrements and vice versa.
+
+21
+1. Negated integer local variable number 1 → KILLED
+
+2. Incremented (a++) integer local variable number 1 → SURVIVED
+Increments Mutator (INCREMENTS)
+The increments mutator will mutate increments, decrements and assignment increments and decrements of local variables (stack variables). It will replace increments with decrements and vice versa.
+
+3. Decremented (a--) integer local variable number 1 → SURVIVED
+Increments Mutator (INCREMENTS)
+The increments mutator will mutate increments, decrements and assignment increments and decrements of local variables (stack variables). It will replace increments with decrements and vice versa.
+
+4. Incremented (++a) integer local variable number 1 → KILLED
+Increments Mutator (INCREMENTS)
+The increments mutator will mutate increments, decrements and assignment increments and decrements of local variables (stack variables). It will replace increments with decrements and vice versa.
+
+5. Decremented (--a) integer local variable number 1 → KILLED
+Increments Mutator (INCREMENTS)
+The increments mutator will mutate increments, decrements and assignment increments and decrements of local variables (stack variables). It will replace increments with decrements and vice versa.
+
+
+22
+1. Negated integer local variable number 2 → KILLED
+
+2. Incremented (a++) integer local variable number 2 → SURVIVED
+Increments Mutator (INCREMENTS)
+The increments mutator will mutate increments, decrements and assignment increments and decrements of local variables (stack variables). It will replace increments with decrements and vice versa.
+
+3. Decremented (a--) integer local variable number 2 → SURVIVED
+Increments Mutator (INCREMENTS)
+The increments mutator will mutate increments, decrements and assignment increments and decrements of local variables (stack variables). It will replace increments with decrements and vice versa.
+
+4. Incremented (++a) integer local variable number 2 → TIMED_OUT
+Increments Mutator (INCREMENTS)
+The increments mutator will mutate increments, decrements and assignment increments and decrements of local variables (stack variables). It will replace increments with decrements and vice versa.
+
+5. Decremented (--a) integer local variable number 2 → TIMED_OUT
+Increments Mutator (INCREMENTS)
+The increments mutator will mutate increments, decrements and assignment increments and decrements of local variables (stack variables). It will replace increments with decrements and vice versa.
+
+
+25
+1. replaced int return with 0 for euclides/App::mdc → KILLED
+Primitive returns Mutator (PRIMITIVE_RETURNS)
+Replaces int, short, long, char, float and double return values with 0.
+2. replaced return of integer sized value with (x == 0 ? 1 : 0) → KILLED
+Return Values Mutator (RETURN_VALS)
+This mutator has been superseded by the new returns mutator set. See Empty returns, False returns, True returns, Null returns and Primitive returns.
+The return values mutator mutates the return values of method calls. Depending on the return type of the method another mutation is used.4
+3. Negated integer local variable number 0 → KILLED
+
+4. Incremented (a++) integer local variable number 0 → SURVIVED
+Increments Mutator (INCREMENTS)
+The increments mutator will mutate increments, decrements and assignment increments and decrements of local variables (stack variables). It will replace increments with decrements and vice versa.
+
+5. Decremented (a--) integer local variable number 0 → SURVIVED
+Increments Mutator (INCREMENTS)
+The increments mutator will mutate increments, decrements and assignment increments and decrements of local variables (stack variables). It will replace increments with decrements and vice versa.
+
+6. Incremented (++a) integer local variable number 0 → KILLED
+Increments Mutator (INCREMENTS)
+The increments mutator will mutate increments, decrements and assignment increments and decrements of local variables (stack variables). It will replace increments with decrements and vice versa.
+
+7. Decremented (--a) integer local variable number 0 → KILLED
+Increments Mutator (INCREMENTS)
+The increments mutator will mutate increments, decrements and assignment increments and decrements of local variables (stack variables). It will replace increments with decrements and vice versa.
